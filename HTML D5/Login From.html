@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swep");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login From in HTML | codehal</title>
+    <link href='https://imgs.search.brave.com/b5CQ_r3HauBVuA7uKw_VCPtwFuBgvEVFMIHzsgoxG6w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzU0LzAyLzY4/LzM2MF9GXzU1NDAy/Njg5Ml9Vc1pHNFRt/M0dQVVY2Znh6bHB2/VjBxT09lOUtLWXZD/ai5qcGc.css' rel='stylesheet'>
+    <style>
 
 *{
     margin:0;
@@ -12,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
-    background: pink;
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045) ;
     background-size: cover;
     background-position: center;
 }
@@ -41,7 +48,7 @@ body{
 .input-box input {
     width:100%;
     height:100%;
-    background: turquoise;
+    background: linear-gradient(#FEAC5E, #C779D0, #4BC0C8);
     border:none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, 2);
@@ -84,7 +91,7 @@ body{
 .wrapper .btn{
     width: 100%;
     height:45px;
-    background: #fff;
+    background: liner-gradient(90deg, #c2e59c, #64b3f4);
     border: none;
     outline: none;
     border-radius: 40px;
@@ -110,3 +117,34 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
+    </style>
+</head>
+<body> 
+    <div class="wrapper">
+    <form action="">
+        <h1>Login Form</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username"
+            required>
+            <i class='bx bx-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="Password" placeholder="Password"
+            required>
+            <i class='bx bx-lock-open-alt'></i>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="Checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+            <p>Not a Member? 
+               <a herf="#">Signup now</a></p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
